@@ -1,0 +1,113 @@
+.main-navbar {
+    padding: .15rem 0;
+    position: fixed;
+    width: 100%;
+    color: #FFF;
+    z-index: 100;
+    background-color: transparent;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+    transition: border, background-color 0.2s ease;
+    @include phone {
+        padding: 1.5em 0;
+        background-color: var(--secondary);
+        border-color: var(--secondary);   
+    }
+    &.scrolled {
+        background-color: var(--secondary);
+        border-color: var(--secondary);
+    }
+    &__brand {
+        @include phone {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__container {
+        max-width: 1920px;
+        width: 90%;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include phone {
+            flex-direction: column;
+        }
+    }
+}
+
+.nav {
+    list-style-type: none;
+    @include phone {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        display: none;
+        opacity: 0;
+        &.show {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            opacity: 1;
+            transition: opacity 0.7s linear;
+            font-size: 1.4rem;
+            justify-content: center;
+        }
+    }
+    &-item {
+        padding: 1em;
+        display: inline-block;
+    }
+    &-link {
+        color: #FFF;
+    }
+}
+
+
+.burger-menu {
+    border: 0;
+    width: 35px;
+    height: 20px;
+    border-radius: 2px;
+    position: relative;
+    background-color: transparent;
+    display: none;
+    @include phone {
+        display: block;
+    }
+    div {
+        width: 100%;
+        height: 3px;
+        border-radius: 5px;
+        background-color: #FFF;
+        position: absolute;
+        transition: .1s cubic-bezier(.4,0,1,1);
+        &:first-child {
+            top: 0;
+        }
+        &:nth-child(2) {
+            top: 50%;
+        }
+        &:last-child {
+            top: 100%;
+        }
+    }
+    &.show {
+        div {
+            &:first-child {
+                top: 50%;
+                transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:last-child {
+                top: 50%;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}

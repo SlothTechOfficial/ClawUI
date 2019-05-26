@@ -1,0 +1,28 @@
+.schedule {
+    padding: 1em 0;
+    &-row {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, .5fr);
+        padding: 1em 0;
+        line-height: 2;
+        border-bottom: 1px solid #dee2e6;
+        font-weight: 300;
+        @include phone {
+            grid-template-columns: 1fr;
+        }
+        .title {
+            
+            a {
+                font-weight: bold;
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+    &-header {
+        @include phone {
+            display: none;
+        }
+    }
+}
