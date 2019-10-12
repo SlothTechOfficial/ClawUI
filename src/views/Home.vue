@@ -4,6 +4,7 @@
     <about id="acerca-de"></about>
     <speakers id="comunidades"></speakers>
     <events id="eventos"></events>
+    <news-letter id="newsletter"></news-letter>
     <footer class="main-footer">
       <div class="container">
         <p>
@@ -20,6 +21,7 @@ import Banner from '@/components/Banner.vue';
 import About from '@/components/About.vue';
 import Speakers from '@/components/Speakers.vue';
 import Events from '@/components/Events.vue';
+import NewsLetter from '@/components/NewsLetter.vue';
 
 export default {
   name: 'home',
@@ -27,7 +29,8 @@ export default {
     Banner,
     About,
     Speakers,
-    Events
+    Events,
+    NewsLetter
   }
 }
 </script>

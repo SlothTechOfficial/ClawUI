@@ -26,7 +26,7 @@
           <a @blur="close" href="#" class="nav-link">Sponsors</a>
         </li>
         <li class="nav-item">
-          <a @blur="close" href="#" class="nav-link">Contact</a>
+          <a @blur="close" href="#newsletter" class="nav-link">Contact</a>
         </li>
         <li class="nav-item">
           <a @blur="close" href="#" class="button--primary">Tickets</a>
