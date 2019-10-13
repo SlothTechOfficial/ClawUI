@@ -1,36 +1,69 @@
 <template>
-  <section class="communities">
+  <section class="pricings">
     <div class="container">
-      <h1 class="title-section">Speakers</h1>
-      <ul class="communities-list">
-        <li class="communities-item">
-          <article class="community">
-            <div class="community__image">
-              <img src="https://source.unsplash.com/1600x900/?portrait" alt>
-            </div>
-            <div class="community__content">
-              <div class="community__info">Talent Nights QRoo</div>
-              <div class="community__social">
-                <a href="#" target="_blank">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" target="_blank">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" target="_blank">
-                  <i class="fas fa-globe-americas"></i>
-                </a>
+      <h1 class="title-section">Prices</h1>
+      <div class="pricings-list">
+          <div class="table-price">
+              <div class="table-price__head">
+                  <h2 class="table-price__title">Basic</h2>
+                  <p class="table-price__price">Free</p>
               </div>
-            </div>
-          </article>
-        </li>
-      </ul>
+              <div class="table-price__body">
+                  <ul class="table-price__list">
+                      <li class="table-price__items">Lorem ipsum</li>
+                      <li class="table-price__items">Lorem ipsum</li>
+                      <li class="table-price__items">Lorem ipsum</li>
+                  </ul>
+              </div>
+              <div class="table-price__select">
+            
+                  <button class="button-lg--outline-secondary">Select</button>
+                  <p class="table-price__small-title">lorem ipsum</p>
+              </div>
+          </div>
+          <div class="table-price select">
+              <div class="table-price__head">
+                  <h2 class="table-price__title">Premium</h2>
+                  <p class="table-price__price"> $1,299</p>
+              </div>
+              <div class="table-price__body">
+                  <ul class="table-price__list">
+                      <li class="table-price__items">Lorem ipsum</li>
+                      <li class="table-price__items">Lorem ipsum</li>
+                      <li class="table-price__items">Lorem ipsum</li>
+                  </ul>
+              </div>
+              <div class="table-price__select">
+            
+                  <button class="button-lg--secondary">Select</button>
+                  <p class="table-price__small-title">lorem ipsum</p>
+              </div>
+          </div>
+          <div class="table-price ">
+              <div class="table-price__head">
+                  <h2 class="table-price__title">Estandar</h2>
+                  <p class="table-price__price">$899</p>
+              </div>
+              <div class="table-price__body">
+                  <ul class="table-price__list">
+                      <li class="table-price__items">Lorem ipsum</li>
+                      <li class="table-price__items">Lorem ipsum</li>
+                      <li class="table-price__items">Lorem ipsum</li>
+                  </ul>
+              </div>
+              <div class="table-price__select">
+            
+                  <button class="button-lg--outline-secondary">Select</button>
+                  <p class="table-price__small-title">lorem ipsum</p>
+              </div>
+          </div>
+      </div>
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  name: "Speakers"
+  name: "Pricings"
 };
 </script>
