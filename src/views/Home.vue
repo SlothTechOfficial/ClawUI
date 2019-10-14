@@ -4,6 +4,7 @@
     <about id="acerca-de"></about>
     <speakers id="comunidades"></speakers>
     <events id="eventos"></events>
+    <pricings id="precios"></pricings>  
     <footer class="main-footer">
       <div class="container">
         <p>
@@ -20,14 +21,15 @@ import Banner from '@/components/Banner.vue';
 import About from '@/components/About.vue';
 import Speakers from '@/components/Speakers.vue';
 import Events from '@/components/Events.vue';
-
+import Pricings from '@/components/Pricings.vue';
 export default {
   name: 'home',
   components: {
     Banner,
     About,
     Speakers,
-    Events
+    Events,
+    Pricings
   }
 }
 </script>

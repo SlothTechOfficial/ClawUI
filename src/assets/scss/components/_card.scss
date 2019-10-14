@@ -1,0 +1,23 @@
+.cards{
+    
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    margin:2rem;
+    word-wrap: break-word;
+    max-width: 100%;
+    box-shadow:0 3px 6px rgba(0,0,0,.8);
+    &__body{
+        width:80%;
+        margin:0 auto;
+        padding:1em;
+    }
+    &.pricing{
+
+    }
+}

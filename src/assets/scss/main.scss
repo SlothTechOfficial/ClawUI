@@ -2,6 +2,8 @@
 @import "base/base";
 @import "base/normalize";
 
+// Layout
+@import "layout/claw-grid";
 // Config
 @import "base/functions";
 @import "base/variables";
@@ -14,6 +16,6 @@
 @import "components/about";
 @import "components/community-list";
 @import "components/schedule";
-
+@import "components/card";
 
 @import "theme/typography";
