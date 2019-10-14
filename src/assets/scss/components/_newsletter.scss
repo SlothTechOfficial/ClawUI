@@ -1,6 +1,6 @@
 .newsletter {
     width: 100%;
-    min-height: 100vh;
+    min-height: 40vh;
     position: relative;
     @include phone {
         height: 50vw;
@@ -63,28 +63,14 @@
             width: 70%;
         }
     }
-    &__button {
-        display: inline-block;
-        text-align: center;
-        line-height: 2em;
-        padding: 0 .5em;
-        border-radius: .25rem;
-        border: none;
-        text-decoration: none;
-        user-select: none;
-        margin: 1rem 0rem;
-        background-color: var(--acent-color);
-        color: #FFF;
-        transition: .2s ease-in-out;
-        transition-property: color, background-color, border;
-        &:focus {
-            outline: 0;
-        }
-        &:active {
-            transform: scale(.95);
-        }
-    }
     &__container {
         margin: 2rem 2rem;
     }
+}
+
+.secondary {
+    line-height: 2em;
+    padding: 0 .5em;
+    margin: 1rem 0rem;
+
 }
