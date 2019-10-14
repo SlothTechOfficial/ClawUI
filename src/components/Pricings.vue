@@ -23,7 +23,7 @@
           </div>
           <div class="table-price__select">
             <button class="button-lg--outline-secondary">Select</button>
-            <p class="table-price__small-title">lorem ipsum</p>
+            <p class="table-price__small-title">*for person</p>
           </div>
         </div>
         <div class="table-price table-price--recomend">
@@ -53,7 +53,7 @@
           </div>
           <div class="table-price__select">
             <button class="button-lg--secondary">Select</button>
-            <p class="table-price__small-title">lorem ipsum</p>
+            <p class="table-price__small-title">*for person</p>
           </div>
         </div>
         <div class="table-price">
@@ -79,7 +79,7 @@
           </div>
           <div class="table-price__select">
             <button class="button-lg--outline-secondary">Select</button>
-            <p class="table-price__small-title">lorem ipsum</p>
+            <p class="table-price__small-title">*for person</p>
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@
     text-align: center;
     &__head{
         flex: 1 0;
-        background:var(--primary);
+        background:var(--secondary);
         color: var(--color-body);
         padding: .8rem;
         border-top-left-radius: inherit;
@@ -44,6 +44,7 @@
     &__small-title{
         font-size: .9rem;
         opacity: .7;
+        line-height: 2;
     }
     &__body{
         flex: 3 0;
@@ -80,9 +81,11 @@
         margin-bottom: -1px;
     }
     &--recomend{
-        --primary:var(--secondary);
+        --secondary:var(--acent-color);
+        --primary: var(--acent-color);
         @include desktop{
             transform: scale(1.1);
         }
+       
     }
 }
