@@ -2,8 +2,6 @@
 @import "base/base";
 @import "base/normalize";
 
-// Layout
-@import "layout/claw-grid";
 // Config
 @import "base/functions";
 @import "base/variables";
@@ -16,10 +14,6 @@
 @import "components/about";
 @import "components/community-list";
 @import "components/schedule";
-<<<<<<< HEAD
-@import "components/card";
-=======
 @import "components/pricing";
->>>>>>> 66831017e936a3a43cfd45e4a3f4fc48e2b89594
 
 @import "theme/typography";
