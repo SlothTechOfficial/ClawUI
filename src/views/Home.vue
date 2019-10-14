@@ -4,7 +4,7 @@
     <about id="acerca-de"></about>
     <speakers id="comunidades"></speakers>
     <events id="eventos"></events>
-    <pricings id="precios"></pricings>  
+    <pricings id="pricings"></pricings>
     <footer class="main-footer">
       <div class="container">
         <p>
