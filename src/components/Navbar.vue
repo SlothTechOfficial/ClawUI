@@ -3,7 +3,7 @@
     <div class="main-navbar__container">
       <div class="main-navbar__brand">
         <a href="#">
-          <img src alt>
+          <img src alt />
           ClawUI for Events
         </a>
         <div :class="{'burger-menu': true, 'show': isShowMenu }" @click="showMenu()">
@@ -13,23 +13,13 @@
         </div>
       </div>
       <ul :class="{'nav': true, 'show': isShowMenu }">
-        <li class="nav-item">
-          <a @blur="close" href="#inicio" class="nav-link">About</a>
+
+        <li v-for="item in menuLinks" :key="item.title" class="nav-item">
+          <a @blur="close" :href="item.slug" class="nav-link">{{item.title}}</a>
         </li>
+        
         <li class="nav-item">
-          <a @blur="close" href="#comunidades" class="nav-link">Speakers</a>
-        </li>
-        <li class="nav-item">
-          <a @blur="close" href="#eventos" class="nav-link">Schedule</a>
-        </li>
-        <li class="nav-item">
-          <a @blur="close" href="#" class="nav-link">Sponsors</a>
-        </li>
-        <li class="nav-item">
-          <a @blur="close" href="#" class="nav-link">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a @blur="close" href="#" class="button--primary">Tickets</a>
+          <a @blur="close" href="#tickets" class="button--primary">Tickets</a>
         </li>
       </ul>
     </div>
@@ -42,7 +32,25 @@ export default {
   data() {
     return {
       scrolled: false,
-      isShowMenu: false
+      isShowMenu: false,
+      menuLinks: [
+        {
+          title: "Home",
+          slug: "#home"
+        },
+        {
+          title: "About",
+          slug: "#about"
+        },
+        {
+          title: "Speakers",
+          slug: "#speakers"
+        },
+        {
+          title: "Schedule",
+          slug: "#schedule"
+        }
+      ]
     };
   },
   methods: {
@@ -64,6 +72,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" scoped>
-</style>
