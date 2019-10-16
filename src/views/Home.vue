@@ -4,6 +4,7 @@
     <about id="acerca-de"></about>
     <speakers id="comunidades"></speakers>
     <events id="eventos"></events>
+    <pricings id="pricings"></pricings>
     <news-letter id="newsletter"></news-letter>
     <footer class="main-footer">
       <div class="container">
@@ -21,8 +22,12 @@ import Banner from '@/components/Banner.vue';
 import About from '@/components/About.vue';
 import Speakers from '@/components/Speakers.vue';
 import Events from '@/components/Events.vue';
+<<<<<<< HEAD
 import NewsLetter from '@/components/NewsLetter.vue';
 
+=======
+import Pricings from '@/components/Pricings.vue';
+>>>>>>> upstream/master
 export default {
   name: 'home',
   components: {
@@ -30,7 +35,11 @@ export default {
     About,
     Speakers,
     Events,
+<<<<<<< HEAD
     NewsLetter
+=======
+    Pricings
+>>>>>>> upstream/master
   }
 }
 </script>
