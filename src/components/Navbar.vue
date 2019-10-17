@@ -13,11 +13,9 @@
         </div>
       </div>
       <ul :class="{'nav': true, 'show': isShowMenu }">
-
         <li v-for="item in menuLinks" :key="item.title" class="nav-item">
           <a @blur="close" :href="item.slug" class="nav-link">{{item.title}}</a>
-        </li>
-        
+        </li>      
         <li class="nav-item">
           <a @blur="close" href="#tickets" class="button--primary">Tickets</a>
         </li>
@@ -49,6 +47,10 @@ export default {
         {
           title: "Schedule",
           slug: "#schedule"
+        },
+        {
+          title: "Newsletter",
+          slug: "#newsletter"
         }
       ]
     };
